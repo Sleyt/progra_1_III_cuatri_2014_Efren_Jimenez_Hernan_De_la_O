@@ -6,6 +6,8 @@
 
 package clase.pkg1;
 
+import java.util.Scanner;
+
 /**
  *
  * @author COMPAQ
@@ -17,6 +19,27 @@ public class Clase1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        double horasTrabajadas=0;
+        double costoHora=0;
+        double salario=0;
+        Scanner teclado = new  Scanner (System.in);
+        
+        System.out.print("Digite las horas laboradas por el trabajador" + "\n");
+        
+        horasTrabajadas = Double.parseDouble(teclado.nextLine());
+       
+        System.out.print("Digite el costo por hora" +"\n");
+        
+        costoHora =Double.parseDouble(teclado.nextLine());
+        
+        salario=horasTrabajadas*costoHora;
+        
+        System.out.print("El salario es " +salario + "\n");
+        
+        
+    
+    }
     }
     
 }
